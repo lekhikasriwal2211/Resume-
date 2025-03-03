@@ -1,176 +1,63 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-/*=============================================
-Base CSS
-=============================================*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html, body {
-    height: 100%;
-    font-family: 'Quicksand', sans-serif;
-    color: rgba(0, 0, 0, 0.6);
-    background: #fafafa;
-}
-ul, li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: 0.5s;
-}
-a:hover {
-    color: #000;
-}
-
-/*===========================================
-Layout Styles
-============================================*/
-.wraper {
-    width: 100%;
-    height: 100%;
-}
-.container {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.left-content {
-    width: 300px;
-    overflow-y: auto;
-    height: 100%;
-    background: #fff;
-    border-right: 1px solid rgba(221, 221, 221, 0.38);
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-.main-content {
-    flex: 1;
-    overflow-y: auto;
-    background: #fff;
-    padding: 30px;
-}
-
-/*===========================================
-Logo & Navigation
-============================================*/
-.logo {
-    text-align: right;
-    margin-bottom: 20px;
-}
-.logo a {
-    color: #fff;
-    background: #000;
-    display: inline-block;
-    padding: 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 5px;
-}
-.nav ul li {
-    margin-bottom: 10px;
-}
-.nav ul li a {
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.6);
-    font-weight: 500;
-    position: relative;
-}
-.nav ul li a:hover {
-    color: #000;
-}
-
-/*===========================================
-Social Media Icons & Contact
-============================================*/
-.social-icons ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
-.social-icons ul li a {
-    font-size: 18px;
-    padding: 5px;
-}
-.foot-contact ul {
-    margin-top: 10px;
-}
-.foot-contact ul li {
-    margin-bottom: 5px;
-}
-
-/*===========================================
-Profile Section
-============================================*/
-.user-img img {
-    max-width: 100%;
-    border-radius: 50%;
-}
-.user-profile {
-    padding-left: 50px;
-}
-.sm-text {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #222;
-    font-weight: normal;
-}
-.name {
-    font-size: 40px;
-    text-transform: uppercase;
-    color: #222;
-    font-weight: 600;
-    margin: 10px 0;
-}
-.role {
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #222;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.text {
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-.pr-list ul li {
-    margin-bottom: 8px;
-}
-.pr-list ul li i {
-    width: 20px;
-}
-.social-icons-head ul {
-    display: flex;
-    gap: 10px;
-}
-.social-icons-head ul li a {
-    font-size: 22px;
-    transition: all 0.3s;
-}
-.social-icons-head ul li a:hover {
-    color: #000;
-    transform: scale(1.2) translateY(-5px);
-}
-
-/*===========================================
-Responsive Design
-============================================*/
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .left-content {
-        width: 100%;
-        text-align: center;
-    }
-    .social-icons ul {
-        justify-content: center;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekhika Sriwal - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="wrapper clearfix">
+        <div class="left">
+            <div class="name-hero">
+                <div class="me-img"></div>
+                <div class="name-text">
+                    <h1>Lekhika <em>Sriwal</em></h1>
+                    <p>(475)-414-5797</p>
+                    <p>lekhikasriwal2211@gmail.com</p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/lekhika-sriwal-267a2533a" target="_blank">
+                            <img src="linkedin-icon.png" alt="LinkedIn" width="20px"> LinkedIn
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com/lekhika_sriwal?igsh=aWljcWhnMmN1djFk" target="_blank">
+                            <img src="instagram-icon.png" alt="Instagram" width="20px"> Instagram
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/share/1BWdEpgoMk/?mibextid=wwXIfr" target="_blank">
+                            <img src="facebook-icon.png" alt="Facebook" width="20px"> Facebook
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="inner">
+                <section>
+                    <h1>Summary</h1>
+                    <p>Dedicated and compassionate licensed nurse with hands-on experience gained through internships, providing high-quality patient care in diverse healthcare settings.</p>
+                </section>
+                <section>
+                    <h1>Education</h1>
+                    <p>University of New Haven, West Haven, CT - <em>Master of Science, Public Health (May 2025)</em></p>
+                    <p>Chitkara University, Punjab - <em>Bachelor of Science, Nursing (April 2023)</em></p>
+                </section>
+                <section>
+                    <h1>Internship Experience</h1>
+                    <p>Government Multi-Specialty Hospital, Chandigarh, Punjab - <em>Nurse Intern (Feb 2022)</em></p>
+                    <p>A.P. Jain Civil Hospital, Rajpura, Punjab - <em>Nurse Intern (Sept 2022)</em></p>
+                </section>
+                <section>
+                    <h1>Licensure & Certification</h1>
+                    <p>Registered Professional Nurse - New York (Aug 2024)</p>
+                    <p>Registered Professional Nurse - India (Dec 2022)</p>
+                    <p>Middle-Level Health Provider - India (Dec 2022)</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
