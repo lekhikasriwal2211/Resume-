@@ -3,61 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lekhika Sriwal - Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <title>Parth Kanojia - Resume</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400,700" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
-    <div class="wrapper clearfix">
-        <div class="left">
-            <div class="name-hero">
-                <div class="me-img"></div>
-                <div class="name-text">
-                    <h1>Lekhika <em>Sriwal</em></h1>
-                    <p>(475)-414-5797</p>
-                    <p>lekhikasriwal2211@gmail.com</p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/lekhika-sriwal-267a2533a" target="_blank">
-                            <img src="linkedin-icon.png" alt="LinkedIn" width="20px"> LinkedIn
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://www.instagram.com/lekhika_sriwal?igsh=aWljcWhnMmN1djFk" target="_blank">
-                            <img src="instagram-icon.png" alt="Instagram" width="20px"> Instagram
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://www.facebook.com/share/1BWdEpgoMk/?mibextid=wwXIfr" target="_blank">
-                            <img src="facebook-icon.png" alt="Facebook" width="20px"> Facebook
-                        </a>
-                    </p>
+
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="images/profile.jpg" alt="Parth Kanojia">
+                <h1>Parth <em>Kanojia</em></h1>
+                <p><i class="fas fa-map-marker-alt"></i> West Haven, CT, USA</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:pkanojiy@nyit.edu">pkanojiy@nyit.edu</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:2035897021">203-589-7021</a></p>
+                
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/parthkanojia_" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1DF2esAsQr" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
-        <div class="right">
-            <div class="inner">
-                <section>
-                    <h1>Summary</h1>
-                    <p>Dedicated and compassionate licensed nurse with hands-on experience gained through internships, providing high-quality patient care in diverse healthcare settings.</p>
-                </section>
-                <section>
-                    <h1>Education</h1>
-                    <p>University of New Haven, West Haven, CT - <em>Master of Science, Public Health (May 2025)</em></p>
-                    <p>Chitkara University, Punjab - <em>Bachelor of Science, Nursing (April 2023)</em></p>
-                </section>
-                <section>
-                    <h1>Internship Experience</h1>
-                    <p>Government Multi-Specialty Hospital, Chandigarh, Punjab - <em>Nurse Intern (Feb 2022)</em></p>
-                    <p>A.P. Jain Civil Hospital, Rajpura, Punjab - <em>Nurse Intern (Sept 2022)</em></p>
-                </section>
-                <section>
-                    <h1>Licensure & Certification</h1>
-                    <p>Registered Professional Nurse - New York (Aug 2024)</p>
-                    <p>Registered Professional Nurse - India (Dec 2022)</p>
-                    <p>Middle-Level Health Provider - India (Dec 2022)</p>
-                </section>
-            </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="employment">
+                <h2>Employment</h2>
+                <p><strong>2022 - Present</strong> <em>Freelance UX/UI Designer</em></p>
+                <p>Specialized in UX/UI design, graphic design, branding, motion graphics, and 3D architecture.</p>
+                <p><strong>2020 - 2022</strong> <em>Radical One | VFX & Graphic Designer</em></p>
+                <p>Worked on high-end VFX projects, branding, and digital illustrations for films and advertisements.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <ul class="skill-set">
+                    <li>UX/UI Design</li>
+                    <li>Graphic Design</li>
+                    <li>VFX & Motion Graphics</li>
+                    <li>Unity 3D Architecture</li>
+                    <li>Adobe Photoshop & After Effects</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Figma & Sketch</li>
+                </ul>
+            </section>
+
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <ul class="skill-set">
+                    <li>Google UX Design Professional Certificate</li>
+                    <li>Adobe Certified Expert - Photoshop</li>
+                    <li>Unity 3D Certified Designer</li>
+                    <li>Advanced Motion Graphics & VFX Certification</li>
+                </ul>
+            </section>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Parth Kanojia | Built with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
