@@ -1,20 +1,15 @@
 // Display the current year dynamically in the footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Fade-in effect on scroll
-$(document).ready(function() {
-    $(window).on("scroll", function() {
-        $(".fade-in").each(function() {
-            var position = $(this).offset().top;
-            var windowHeight = $(window).height();
-            var scrollPosition = $(window).scrollTop();
-
-            if (scrollPosition + windowHeight - 50 > position) {
-                $(this).addClass("active");
-            }
-        });
+// Smooth scrolling for better UX (Optional)
+$(document).ready(function(){
+    $("a").on("click", function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate({
+                scrollTop: $(hash).offset().top
+            }, 800);
+        }
     });
-
-    // Trigger the effect on load
-    $(window).trigger("scroll");
 });
